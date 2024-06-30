@@ -3,17 +3,13 @@
 <div class="landing-layout">
   <div class="landing-container">
     
-
     <div class="landing-hook">
         {{ partial "imgc" (dict "id" "engineer" "src" "images/engineer.png" "resize" "1000x webp photo q50")}}
-
       <div id="welcome-container">
         <h1>join the premier community of budding hackers, makers, artists, inventors, scientists, and entrepreneurs at UConn.</h1>
         <button class="hack-button" type="button">join today</button>
       </div> 
     </div>
-
-
 
     <div id="survival-guide">
       <hr>
@@ -21,25 +17,57 @@
       <hr>
     </div>
 
-    <div id="our-mission">
-
-      <div id="testimonial">
+    <div class="two-sided" id="our-mission">
+      <div class="left" id="testimonial">
         {{ partial "imgc" (dict "id" "profile" "src" "images/kalin.png" "resize" "1000x webp photo q50")}}
         <b>Kalin Kochnev '25, Co-founder</b>
       </div>
-      <div id="text">
+      <div class="right" id="text">
         <h1>our mission</h1>
         <p>
-          Hacklab is a budding grassroots initiative to bring together the innovators, creators, and dreamers of UConn. We are the kind of people whose spirit and passion tug upon our hearts and minds to satisfy our need for learning, creation, community, and ultimately purpose. <br><br> We pride ourselves on our attitude towards life. We say "can" while others chant "cannot". We leave our cynicism at the door and welcome the possibilities. <br> <br> We build each other up through honesty and gratuitous embetterment of each other. Life is not a zero sum game. We aim to connect one another with the resources needed to succeed, inspire, and forge lifelong connections in the process. <br><br> Individually we are talented. <br> <br> Together we are unstoppable. Join us and be part of something extraordinary! <br><br> Go UConn!!!
+          Hacklab is a budding grassroots initiative to bring together the innovators, creators, and dreamers of UConn. We are the kind of people whose spirit and passion tug upon our hearts and minds to satisfy our need for learning, creation, community, and ultimately purpose. <br><br> We pride ourselves on our attitude towards life. We say "can" while others chant "cannot". We leave our cynicism at the door and welcome the possibilities. <br> <br> We build each other up through honesty and gratuitous embetterment of each other. Life is not a zero sum game. We aim to connect one another with the resources needed to succeed, inspire, and forge lifelong connections in the process. <br><br> Individually we are talented. Together we are unstoppable. Join us and be part of something extraordinary! <br><br> Go UConn!!!
         </p> 
       </div>
-      
     </div>
 
 
-
+    <div class="two-sided" id="what-we-offer">
+      <div class="left" id="text">
+        <h1>what we offer</h1> 
+        <ul>
+          <li>The space to build and collaborate on your ideas</li>
+          <li>A vibrant online community to meet and discuss virtually</li>
+          <li>Online tools to find the people and resources you need most</li>
+          <li>And more to come!</li>
+        </ul>
+      </div> 
+      {{ partial "imgc" (dict "class" "right" "id" "lab-space" "src" "images/lab-space.jpg" "resize" "1000x webp photo q50")}}
+    </div>
   </div>
 
+
+  <div id="our-tools">
+    <h1>our tools</h1>
+    <div class="two-sided tool" id="">
+     <div class="left">
+      <h2>Find or create your next opportunity in the blink of an eye</h2> 
+      <p></p>
+      <button class="hack-button" type="button">lets do this!</button>
+     </div> 
+     <div class="right">
+     </div>
+    </div>
+
+    <div class="two-sided tool">
+     <div class="left">
+      <h2>Tools shouldn't sit around to collect dust</h2>
+      <p></p>
+      <button class="hack-button" type="button">onwards!</button>
+     </div> 
+     <div class="right">
+     </div>
+    </div>
+  </div>
       
 </div>
 {{ end }}
