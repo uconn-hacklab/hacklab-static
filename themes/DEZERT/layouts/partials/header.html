@@ -2,15 +2,16 @@
 <header>  
   <nav class="navbar" role="navigation">  
     <div id="left"> 
-      {{ $subtitle := .Scratch.Get "subtitle"}}
-      <a href="/">kalin kochnev</a>
-      {{ with $subtitle }}
-      <p id="subtitle">{{ . }}</p>
-      {{end}}
+
+      <a href="/">
+        {{ partial "partials/icon.html" (dict "icon" "hacklab-logo") }}
+      </a>
     </div>  
     <div id="right">  
-      <a href="/journey">journeys</a>  
-      <a href="/blog">blog</a>
+      <a href="/club-stuff">club stuff</a>  
+      <a href="/made-in-hacklab">made in hacklab</a>
+      <a href="/resources">resources</a>
+      <a href="/events">events</a>
     </div>  
   </nav>  
 </header>  

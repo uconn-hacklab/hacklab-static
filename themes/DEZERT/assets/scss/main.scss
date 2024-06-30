@@ -36,9 +36,9 @@ header {
   background-color: common.$bg-color; 
 }
 .navbar {
-  @include common.flex(row, space-around, center);
+  @include common.flex(row, space-between, center);
   
-  max-width: 1200px;
+  max-width: 1000px;
   width: 100%;
 
   a {
@@ -69,12 +69,12 @@ header {
     @include common.flex(row, space-between);
     align-self: center;
     
-    width: 175px;
     a {
       margin: 0px;
       padding: 0px;
       font-size: 1.5rem;
       font-weight: 600;
+      margin-right: 25px;
     }
   }
 }
