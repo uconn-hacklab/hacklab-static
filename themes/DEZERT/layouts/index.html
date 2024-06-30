@@ -13,13 +13,15 @@
 
     <div id="survival-guide">
       <hr>
-      are you a new student? check out our survival guide <a href="/survival-guide">here</a>
+      <span>
+        are you a new student? check out our survival guide <a href="/survival-guide">here</a>
+      </span>
       <hr>
     </div>
 
     <div class="two-sided" id="our-mission">
       <div class="left" id="testimonial">
-        {{ partial "imgc" (dict "id" "profile" "src" "images/kalin.png" "resize" "1000x webp photo q50")}}
+        {{ partial "imgc" (dict "class" "profile" "src" "images/kalin.png" "resize" "1000x webp photo q50")}}
         <b>Kalin Kochnev '25, Co-founder</b>
       </div>
       <div class="right" id="text">
@@ -51,7 +53,7 @@
     <div class="two-sided tool" id="">
      <div class="left">
       <h2>Find or create your next opportunity in the blink of an eye</h2> 
-      <p></p>
+      <p>Find student projects, professors, and other oppoortunities looking for help on campus here! <br><br> Or publicize your own project here! </p>
       <button class="hack-button" type="button">lets do this!</button>
      </div> 
      <div class="right">
@@ -61,12 +63,36 @@
     <div class="two-sided tool">
      <div class="left">
       <h2>Tools shouldn't sit around to collect dust</h2>
-      <p></p>
+      <p>Borrow tools and components free of charge from organizations on campus</p>
       <button class="hack-button" type="button">onwards!</button>
      </div> 
      <div class="right">
      </div>
     </div>
+  </div>
+  
+  <div id="volunteer-suggestions">
+    <h1>Have a suggestion or want to volunteer?</h1>
+    <h2>Contact our 2024-25 eboard!</h2>
+    <div class="eboard-card two-sided">
+      <div class="left">
+        {{ partial "imgc" (dict "class" "profile" "src" "images/kalin.png" "resize" "1000x webp photo q50")}}
+      </div>
+      <div class="right">
+        <h2>Kalin Kochnev</h2>
+        <h3>President/Co-founder</h3>
+        <div class="contact">
+          <a href="mailto:kalin.kochnev@uconn.edu">  &lt;kalin.kochnev@uconn.edu&gt; </a>
+          <a href="https://kalinkochnev.com">kalinkochnev.com</a>
+        </div>
+
+        <b>Interests:</b>
+        <div class="interests">
+         <p>books, blogging, embedded, systems programming, control systems</p> 
+        </div>
+      </div>
+      
+    </div> 
   </div>
       
 </div>

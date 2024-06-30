@@ -80,12 +80,12 @@ header {
 
 a {
   text-decoration: none;
-  color: inherit;
+  font-size: inherit;
+  @include common.link;
 }
 
 
 .link-style {
-  @include common.link;
 }
 
 .hover {
