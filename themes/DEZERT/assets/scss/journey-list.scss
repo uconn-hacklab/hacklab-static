@@ -1,0 +1,103 @@
+@use "common";
+
+$project-width: 550px;
+
+
+#journey-container {
+  @include common.flex(row, center);
+  width: 100%;
+
+  #journeys-multiple {
+    display: grid;
+    grid-template-columns: minmax(300px, 1.4fr) minmax(300px, 1fr);
+    column-gap: 20px;
+    
+    justify-self: center;
+    max-width: 1100px;
+    height:fit-content; 
+
+    #project-col {
+      @include common.flex(column, $wrap: nowrap);
+      height: 100%;
+    }
+
+    #log-col {
+      position: sticky;
+      right: 0;
+    }
+  }
+
+}
+
+
+$card-padding: 15px;
+.project-card {
+  @include common.flex(row, space-between, center);
+  padding: $card-padding;
+  margin-bottom: 10px;
+  height: fit-content;
+  //border: 3px common.$darker-bg-color solid;
+
+  .left {
+    padding-right: $card-padding;
+    padding-left: 10px;
+  }
+
+  .right {
+    height: 175px;
+  }
+
+  .journey-img {
+    height: 100%;
+    aspect-ratio: 6/5;
+    border-radius: common.$img-radius;
+    object-fit: cover;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+    font-family: common.$head-font;
+    font-weight: bold;
+    margin: 0px;
+    color: common.$font-color;
+    span {
+      height: 30px;
+      position: relative;
+      top: 3px;
+      right: -6.5px;
+    }
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: common.$body-font;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #journey-container {
+    #journeys-multiple {
+      grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+  }
+
+  .project-card {
+    padding: 10px 0px;
+  }
+  
+}
+
+@media screen and (max-width: 400px) {
+  .right {
+    width: 40%;
+  }
+  .left {
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+}
+
+

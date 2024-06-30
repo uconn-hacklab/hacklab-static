@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{- partial "partials/head.html" . -}}
+{{- partial "partials/header.html" . -}}
+
+{{ $post := .Page }}
+<div class="single-container">
+  <div class="post-page">
+    <div id="post-head">
+      <h1>{{ $post.Title }}</h1>
+      <h4>{{ $post.Summary }}</h4>
+
+      <div class="date">
+
+        <p>{{ $post.Date | time.Format ":date_long" }}</p>
+      </div>
+    </div>
+    <div class="content">
+      {{ $post.Content}}
+    </div>
+  </div>
+</div>
+{{- partial "partials/footer.html" . -}}
+{{ end }}

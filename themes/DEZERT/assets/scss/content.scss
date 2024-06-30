@@ -1,0 +1,140 @@
+@use "common";
+
+
+$body-size: 1.3rem;
+.content {
+  max-width: 100%;
+  font-family: $body-font;
+  font-size: 1rem;
+  color: $font-color;
+  margin-bottom: 75px;
+
+  * {
+    line-height: 1.22;
+    margin: 0px;
+  }
+ 
+  h1 {
+    font-family: $body-font;
+    font-size: 2rem;
+  }
+  h2 {
+    font-family: $body-font;
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-family: $body-font; 
+    font-size: 1.5rem;
+
+  }
+  h4 {
+    font-family: $body-font;
+    font-size: $body-size;
+
+  }
+  p {
+    font-size: $body-size;
+    line-height: 1.58;
+  }
+
+  h1 + h2{
+    margin-top: 31px;
+  }
+
+  p+h2, ol+h2, ul+h2 {
+    margin-top: 30px;
+  }
+
+  p+h1, ol+h1, ul+h1 {
+    margin-top: 56px;
+  }
+
+
+  p+p, ol+p, ul+p {
+    margin-top: 29px;
+  }
+
+  p+ol, p+ul{
+    margin-top: 5px;
+  }
+
+
+  a {
+    @include common.link();
+    font-size: $body-size;
+  }
+  li {
+    font-size: $body-size;
+    margin-bottom: 10px;
+  } 
+  ol > li::marker {
+    font-weight: bold;
+  }
+  img {
+    width: 100%;
+    border-radius: common.$img-radius;
+  }
+
+  iframe {
+    border-radius: common.$img-radius;
+  }
+  .image-container {
+    width: 100%;
+  }
+  figure {
+    @include common.flex(column, $align: center);
+    margin: 0px;
+
+    figcaption {
+      display: inline;
+      font-size: 16px;
+      font-family: $head-font;
+      color: $sub-font-color;
+    }
+  }
+  blockquote {
+    ::before {
+      display: block;
+      position: relative;
+      font-size: 80px;
+      font-weight: 700;
+      font-style: italic;
+      font-family: $head-font;
+      line-height: 0;
+      content: "\201c";
+      left: -54px;
+      top: 30px;
+    } 
+    
+    p {
+      font-weight: 700;
+      font-family: $body-font;
+      font-size: $body-size;
+    }
+  }
+
+  code {
+    font-size: $body-size;
+    background-color: aliceblue;
+    padding: 3px;
+    border-radius: common.$img-radius;
+    ;
+  }
+  pre {
+    border-radius: common.$img-radius;
+    padding: 0px 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    transition: width ease-in 0.2s;
+    code { background-color: inherit;}
+
+    &:hover {
+      width: 900px;
+    }
+  }
+
+ }
+
+

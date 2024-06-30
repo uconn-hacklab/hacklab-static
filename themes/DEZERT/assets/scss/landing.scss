@@ -1,0 +1,116 @@
+@import "variables.scss";
+
+
+$welcome-width: 600px;
+
+.landing-layout {
+  height: 100%;
+  width: 100%;
+  
+}
+#portrait {
+  height: 100vh;
+  transform: scaleY(-1);
+  position: absolute;
+  top: -50px;
+  right: -150px;
+}
+
+#gradient {
+  background-image: linear-gradient(#d2f9feff, #8bbaefff, #457ce0ff);
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  height: 25vh;
+  z-index: -1;
+}
+
+
+#welcome-container {
+  @include common.flex(column, center); 
+  position: absolute;
+  left: 60px;
+  height: 100vh;
+
+  .navbar {
+    position: absolute;
+    top: 30px;
+    display: block;
+    margin-bottom: 50px;
+    a {
+      font-family: $body-font;
+      color: $font-color;
+      font-weight: 600;
+      font-size: 35px;
+      text-decoration: none;
+    }
+
+    .left {
+      @include common.flex(row, flex-start);
+
+      a {
+        margin-right: 115px;
+      }
+    }
+  }
+
+  #welcome {
+    width: $welcome-width;
+    h3 {
+      margin-top: 0px;
+
+      font-family: $body-font;
+      color: $font-color;
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+
+    h1 {
+      margin: 0px;
+      font-family: $head-font;
+      font-size: 4rem;
+      color: $font-color;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1400px) {
+  .landing-layout {
+    @include common.flex(column, flex-start);
+    height: 100%;
+  }
+  #welcome-container {
+    position: unset;
+    display: block;
+    height: fit-content;
+    margin: 20px 40px;
+    
+    .navbar {
+      position: unset;
+      display: block;
+      .left {
+        a { margin: 0px;}
+        width: 100%;
+        justify-content: space-around;
+      }
+    }
+    #welcome {
+      width: 100%;
+
+    }
+  }
+  #portrait {
+    position: sticky;
+    display: block;
+    width: 100vw;
+    height: fit-content;
+  }
+  #gradient {
+    position: relative;
+    bottom: 92vw;
+    height: 150vh;
+  }
+}
+
+

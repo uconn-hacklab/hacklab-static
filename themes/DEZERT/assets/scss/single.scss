@@ -1,0 +1,39 @@
+@use "post.scss";
+@use "common";
+
+.single-container {
+  @include common.flex(row, center);
+
+  width: 100%;
+}
+
+$content-width: 700px;
+.post-page {
+  @include common.flex(column, $align: center);
+  
+  width: $content-width;
+
+  #post-head {
+    @include post.post(1.4rem, 2.5rem);
+    width: $content-width;
+  }
+  
+  .post-img { 
+    @include common.flex(column, $align: center);
+
+    min-width: 675px;
+    margin-top: 30px;
+    border-radius: common.$img-radius
+  }
+  
+}
+
+@media screen and (max-width: 700px) {
+  
+  .post-page {
+    width: 100%;
+    #post-head {
+      width: 100%;
+    }
+  }
+}

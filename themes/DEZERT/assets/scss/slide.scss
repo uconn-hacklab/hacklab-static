@@ -1,0 +1,27 @@
+@use "common";
+
+.splide__slide {
+
+  figure {
+    width: 100%;
+    border-radius: common.$img-radius; 
+    height: fit-content;
+    object-fit: cover;
+  }
+}
+.splide__pagination {
+  padding: 0px;
+}
+.splide__pagination__page {
+  border: 3px solid common.$accent-color;
+  //#border: 2px solid black;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 0px;
+  margin-right: 2.5px;
+  &.is-active {
+    background-color: common.$accent-color;
+  }
+}

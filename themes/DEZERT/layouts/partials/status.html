@@ -1,0 +1,20 @@
+<span class="icon">
+  <svg width="100%" height="100%" version="1.1" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+   <g transform="translate(-84.865 -99.13)">
+     <circle cx="97.365" cy="111.63" r="7.5" 
+      fill="{{if isset . "status"}}
+          {{ if eq .status "active"}}
+            #b4e6acff
+          {{ else if eq .status "on pause"}}
+            #acc3e6ff
+          {{ else if eq .status "archived"}}
+            #e67373ff
+          {{ end }} 
+        {{else}} 
+          none 
+        {{end}}" 
+    stroke="{{ if isset . "stroke"}}{{.}}{{else }}#000 {{end}}" 
+    stroke-width="3.2657"/>
+   </g>
+  </svg>
+</span>

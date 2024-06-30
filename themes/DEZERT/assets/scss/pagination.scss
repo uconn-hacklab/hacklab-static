@@ -1,0 +1,80 @@
+@use "common";
+
+.pagination {
+  @include common.flex(row, center, center);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  column-gap: 20px;
+  
+  a {
+    font-family: common.$head-font;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .pagination__item {
+    
+    @include common.flex(row, center, center);
+    width: 1.75rem;
+    height: 1.75rem;
+     
+    border: 3px solid common.$darker-bg-color;
+    border-radius: 20px;
+  }
+  .first {
+    border: none;
+  }
+
+  .last {
+    border: none;
+    transform: rotate(270deg);
+  }
+
+  .previous {
+    border: none;
+  }
+
+  .next {
+    border: none;
+    color: common.$darker-bg-color;
+    transform: rotate(270deg);
+  }
+  .current {
+    border: none;
+    background-color: common.$accent-color;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+  }
+  .pagination__link {
+    span {
+      display: flex;
+      align-content: center;
+      height: min-content;
+      width: min-content;
+      path {
+        fill: common.$dark-bg;
+      }
+    }
+
+    
+    .first {
+
+    }
+
+    .last {
+
+    }
+    
+    .previous {
+
+    }
+
+    .next {
+
+    }
+  }
+
+
+}

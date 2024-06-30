@@ -1,0 +1,78 @@
+@use "common";
+
+
+
+#journey-single {
+  @include common.flex(row, center, flex-start);
+  width: 100%;
+  height: 100vh;
+  column-gap: 40px;
+  padding-bottom: 50px;
+  overflow-y: auto;
+}
+
+#description-col {
+  max-width: 700px;
+
+  img {
+    height: 450px;
+    object-fit: cover;
+    border-radius: common.$img-radius;
+  }
+}
+
+#summary-container {
+  position: sticky;
+  top: 0;
+
+  width: 450px;
+  #title {
+    margin: 0px;
+    line-height: 1;
+
+    span {
+      margin-left: 5px;
+      height: 35px;
+    }
+  }
+  #date {
+    margin: 0px;
+    line-height: 1;
+    font-size: 25px;
+    font-weight: 200;
+    font-family: common.$head-font; 
+  }
+
+  p {
+    font-size: 21px;
+    font-family: common.$body-font;
+    font-weight: 400;
+  }
+  #inducted {
+    @include common.flex(row, space-between, center);
+    margin-bottom: 10px;
+
+    div {
+      @include common.flex(row, $align: center);
+      
+      font-family: common.$body-font;
+      font-size: 25px;
+      line-height: 1.4;
+      
+      span {
+        height: 25px;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  #links {
+    @include common.flex(column);
+    row-gap: 15px;
+
+    a {
+      @include common.flex(row, $align: center);
+      column-gap: 10px;
+    }
+  }
+}

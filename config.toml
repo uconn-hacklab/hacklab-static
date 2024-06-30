@@ -1,0 +1,12 @@
+baseURL = 'https://kalinkochnev.com'
+languageCode = 'en-us'
+title = 'Kalin Kochnev'
+theme = "DEZERT"
+
+[taxonomies]
+    blog_tag = 'blog_tags'
+    journey_tag = 'journey_tags'
+    type = 'types'
+
+paginate=1
+

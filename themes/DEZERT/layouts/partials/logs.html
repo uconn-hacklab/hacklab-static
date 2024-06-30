@@ -1,0 +1,22 @@
+{{ with .logs }}
+  {{ $logs := . }}
+  <div id="log-container">
+
+    <h2>Recent Logs</h2>
+    {{ range $index, $log := $logs }}
+      <div class="log hover tagable" onclick="window.location='{{ $log.Permalink}}'" data-tags="{{ range $tag := $log.Params.journey_tags }}{{ lower $tag}},{{end}}" >
+        <span>#{{sub (len $logs ) $index}}</span>
+        <div class="info-container">
+          <h3>{{ $log.Title }}</h3>
+          <h4 class="summary">{{ $log.Summary }}</h4>
+          <div class="date-info">
+            <h4>{{ $log.Date | time.Format ":date_long" }}</h4>
+            {{ with $.journey }}
+            <a class="link-style" href="{{ $log.Parent.Permalink}}">{{$log.Parent.Title}}</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

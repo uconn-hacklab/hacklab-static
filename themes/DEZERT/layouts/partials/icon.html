@@ -1,0 +1,3 @@
+<span {{if isset . "class" }} class="{{.class}}" {{ end }}>
+    {{ partial (printf "icons/%s.svg" .icon) }}
+</span>

@@ -1,0 +1,30 @@
+{{ define "main"}}
+
+<html>
+    {{- partial "head.html" . -}}
+     
+    <div class="landing-layout">
+      <div id="welcome-container">
+        <nav class="navbar" role="navigation">  
+          <div class="left">  
+            <a href="/journey">journeys</a>  
+            <a href="/blog">blog</a>  
+          </div>  
+        </nav>  
+        <div id="welcome">
+          <h1>Hi, I'm Kalin</h1>
+          <h3>
+            I am a Computer Science student at the University of Connecticut. In my spare time, I am a hacker, inventor, creator, and writer. </br></br>
+
+            If there's anything you should know about me, my life revolves around passion projects. The logical half of my brain thrives on learning and tinkering with hardware, software, and math. While the other loves to express myself in writing and through design. </br>        
+          </h3>
+        </div>
+        
+      </div>
+      <img src="/images/portrait2.png" id="portrait"/>
+
+      <div id="gradient"></div> 
+    </div>
+</html>
+
+{{ end }}

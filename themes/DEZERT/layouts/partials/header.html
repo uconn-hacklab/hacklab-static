@@ -1,0 +1,16 @@
+
+<header>  
+  <nav class="navbar" role="navigation">  
+    <div id="left"> 
+      {{ $subtitle := .Scratch.Get "subtitle"}}
+      <a href="/">kalin kochnev</a>
+      {{ with $subtitle }}
+      <p id="subtitle">{{ . }}</p>
+      {{end}}
+    </div>  
+    <div id="right">  
+      <a href="/journey">journeys</a>  
+      <a href="/blog">blog</a>
+    </div>  
+  </nav>  
+</header>  

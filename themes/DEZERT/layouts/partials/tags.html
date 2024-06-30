@@ -1,0 +1,15 @@
+<div>
+  {{ $tags_disp := 20}}
+  {{ $tags := .tags }}
+  {{ range (first $tags_disp $tags )}} {{/* this is an ordered taxnonomy
+  https://bwaycer.github.io/hugo_tutorial.hugo/taxonomies/ordering/ */}}
+  <span class="tag"><a href="?tag={{lower .Name}}">{{ .Name }}</a></span>
+  {{ end }}
+  {{/* If the # of tags exceeds the # to display, add a button to take the user to the rest */}}
+  {{ if (gt (len $tags) $tags_disp) }}
+  <span id="remain-tags">+{{sub (len $tags) $tags_disp }} more</span>
+  {{ end }}
+  <a href="{{ .section_link }}" class="link-style">clear filters</a>
+</div>
+
+

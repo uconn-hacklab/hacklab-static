@@ -1,0 +1,80 @@
+@use "common";
+
+$subtitle-size: 1rem;
+$head-size: 1.4rem;
+
+#log-container {
+  @include common.flex(column, flex-start);
+  border-radius: 10px;
+
+  h2 {
+    font-family: common.$body-font;
+    font-size: 1.6rem;
+    font-weight: 600px;
+    color: common.$font-color;
+
+    margin: 0px;
+  }
+  .log {
+    @include common.flex(row, flex-start, flex-start);
+    padding: 15px;
+    margin-bottom: 10px;
+    h3 {
+      width: 100%;
+      margin: 0px;
+      margin-bottom: 10px;
+
+      line-height: 1;
+      font-family: common.$body-font;
+      font-size: $head-size;
+      color: common.$font-color;
+      font-weight: 400;
+    }
+    span {
+      font-size: 2rem;
+      line-height: 0.75;
+      font-family: common.$body-font;
+      color: common.$accent-color;
+      font-weight: 800;
+      //border-bottom: 2.5px solid #855546;
+    }
+    h4 {
+      @include common.subtitle-text(common.$font-color, $subtitle-size); 
+      font-weight: 300;
+      margin: 0px;
+    }
+    .info-container {
+      @include common.flex(column);
+      margin-left: 10px;
+      width: 100%;
+    }
+    .date-info {
+      @include common.flex(row, space-between, center);
+      width: 100%;
+      margin-top: 10px;
+      font-size: $subtitle-size;
+    }
+  }
+  
+}
+
+
+@media screen and (max-width: 400px) {
+  #log-container {
+    padding: 2.5px;
+    .log {
+
+      padding: 5px;
+      .info-container {
+        h3 {
+          margin-bottom: 2.5px;
+        }
+        .date-info {
+          margin-top: 2.5px;
+        }      
+      }
+      margin-bottom: 5px;
+      
+    }
+  }
+}

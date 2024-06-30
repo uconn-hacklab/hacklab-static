@@ -1,0 +1,144 @@
+@use "common";
+@use "post";
+
+@import "landing.scss";
+@import "blog.scss";
+@import "scrollbar.scss";
+@import "single.scss";
+@import "journey-list.scss";
+@import "journey.scss";
+@import "logs.scss";
+@import "slide.scss";
+@import "content.scss";
+@import "pagination.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+#content {
+  height: 100%;
+  overflow: clip;
+  width: 100vw;
+}
+html {
+  color: common.$font-color;  
+  line-height: 1.5;  
+  font-family: 'Lora';  
+}
+body {    
+  background-color: $bg-color;
+  margin: 0 auto;  
+  height: 100%;
+}  
+
+header {
+  @include common.flex(row, center);
+  padding: 20px;
+
+  background-color: common.$bg-color; 
+}
+.navbar {
+  @include common.flex(row, space-around, center);
+  
+  max-width: 1200px;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    color: $font-color;
+    font-family: $body-font;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  #left {
+    @include common.flex(column);
+    align-self: center;
+    
+    margin: 0px;
+    font-size: 2rem;
+    line-height: 1;
+
+    #subtitle {
+      font-family: $body-font;
+      font-weight: 300;
+      font-size: 2rem;
+      margin: 0px;
+    }
+  }
+
+  #right {
+    @include common.flex(row, space-between);
+    align-self: center;
+    
+    width: 175px;
+    a {
+      margin: 0px;
+      padding: 0px;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.link-style {
+  @include common.link;
+}
+
+.hover {
+  border-radius: 10px;
+  background-color:$bg-color;
+  transition: all 0.4s;
+  box-shadow: none;
+}
+.hover:hover {
+  background-color: $darker-bg-color;
+  box-shadow:  0px 5px 0px 0px common.$accent-color;
+}// credit rohan menon <rohanmenon.com>
+
+@keyframes fadeIn { 
+  from { background-color: common.$bg-color;
+  } 
+  to {
+    background-color: common.$darker-bg-color;
+  }
+}
+
+.image-container {
+  
+  img.batch-load {
+    display: block;
+    margin: 0px; 
+    opacity: 0;
+    transition: opacity 0.4s;
+    background-color: transparent;
+  }
+
+  background-color: $darker-bg-color; 
+  border-radius: $img-radius;
+  animation: fadeIn 1s infinite alternate; 
+}
+
+
+.tag {
+  @include common.tag(0.8rem, $pad: 3px 8px, $rad: 15px);
+  margin-bottom: 1px;
+  font-weight: bold;
+}
+
+
+.star-icon {
+  display: inline-block;
+  max-height: 1.5rem;
+  max-width: 1.5rem;
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 11px;
+  }
+}

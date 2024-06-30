@@ -1,0 +1,5 @@
+{{ with .Resources.ByType "image" }}
+  {{ range . }}
+    <li class="splide__slide"><img src="{{ .RelPermalink}}" /></li>
+  {{ end }}
+{{ end }}
