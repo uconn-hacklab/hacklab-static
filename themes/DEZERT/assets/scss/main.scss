@@ -32,8 +32,6 @@ body {
 header {
   @include common.flex(row, center);
   padding: 20px;
-
-  background-color: common.$bg-color; 
 }
 .navbar {
   @include common.flex(row, space-between, center);
@@ -78,6 +76,7 @@ header {
     }
   }
 }
+
 
 a {
   text-decoration: none;
@@ -124,8 +123,13 @@ a {
 }
 
 
+.hack-button {
+  @include common.pill(20px, 5px 20px, 20px);
+  font-weight: bold;
+  border: none;
+}
 .tag {
-  @include common.tag(0.8rem, $pad: 3px 8px, $rad: 15px);
+  @include common.pill(common.$subtitle-size, 5px 10px, 20px);
   margin-bottom: 1px;
   font-weight: bold;
 }

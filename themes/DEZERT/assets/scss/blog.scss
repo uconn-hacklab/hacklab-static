@@ -8,7 +8,7 @@
 }
 
 .blog-tag {
-  @include common.tag(common.$subtitle-size, 5px 10px, 20px);
+  @include common.pill(common.$subtitle-size, 5px 10px, 20px);
 }
 
 

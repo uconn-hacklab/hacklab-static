@@ -1,0 +1,29 @@
+{{ $image := ""}}
+
+{{ if isset . "page" }}
+    {{- $image = $.page.Resources.GetMatch $.src -}}
+{{ else }}
+    {{- $image = resources.Get $.src -}}
+{{ end }}
+
+{{ with $image }}
+    {{ if and (ne .MediaType.Type "image/gif") (ne .MediaType.Type "image/svg+xml") }}
+        {{ $image = $image.Resize $.resize }}
+    {{ end }}
+    <img
+    src="{{ $image.RelPermalink }}"
+    {{ with $.class}} class="{{ $.class }}" {{ end }}
+    {{ with $.id }} id="{{ $.id }}" {{ end }}
+    {{ with $.title }} alt="{{.}}" {{ end }}
+    loading="{{ if isset . "loading"}}{{.}}{{else}}lazy{{end}}" 
+
+    style="
+        {{ with $.width  }} width: {{.}}; {{end}} 
+        {{ with $.height }} height: {{.}}; {{end}}
+        {{ with $.style}} {{.}} {{ end}}
+    "
+    />
+
+{{else}}
+    <h1> image not found :(</h1>
+{{ end }}

@@ -19,14 +19,14 @@
   margin: 0px;
 }
 
-@mixin tag($size, $pad, $rad, $color: white, $bg: #494949) {
+@mixin pill($size, $pad, $rad, $color: white, $bg: variables.$accent-color) {
   background-color: $bg;
   border-radius: $rad;
   padding: $pad;
   color: $color;
   font-family: variables.$body-font;
   font-size: $size;
-  font-style: 400;
+  font-weight: 400;
 
   display: inline-block;
 }
