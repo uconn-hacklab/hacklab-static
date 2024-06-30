@@ -16,6 +16,15 @@ $welcome-width: 600px;
 .landing-hook {
   height: 75vh;
 
+  #engineer {
+    height: 100vh;
+    position: absolute;
+    top: -50px;
+    right: -150px;
+    z-index: -1;
+    margin-bottom: 100vh;
+  }
+
   #welcome-container {
     width: 50vw;
     position: relative;
@@ -23,21 +32,40 @@ $welcome-width: 600px;
   }
 }
 
-#engineer {
-  height: 100vh;
-  position: absolute;
-  top: -50px;
-  right: -150px;
-  z-index: -1;
-  margin-bottom: 100vh;
-}
+
 
 #survival-guide {
   
 }
 
-.our-mission {
+#our-mission {
+  @include common.flex(row, flex-start, center);
 
+
+  #text {
+    width: 50vw;
+    margin-left: 50px;
+
+    h1 {
+      color: common.$accent-color;
+    }
+  }
+
+  #testimonial {
+    @include common.flex(column, flex-start, center);
+    b {
+      margin-top: 10px;
+      width: 150px;
+    }
+    #profile {
+      width: 225px;
+      height: 225px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+
+  }
 }
 
 
