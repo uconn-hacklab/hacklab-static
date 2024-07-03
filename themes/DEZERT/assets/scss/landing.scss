@@ -6,6 +6,9 @@ $welcome-width: 600px;
 h1 {
   color: common.$accent-color;
 }
+h1, h2, h3, h4 {
+  font-family: common.$head-font;
+}
 
 .two-sided {
   @include common.flex(row, flex-start, center);

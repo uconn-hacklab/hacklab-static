@@ -12,7 +12,17 @@
 @import "content.scss";
 @import "pagination.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+@font-face {
+  font-family: 'Houdini Pixel';
+  src: url('/fonts/HoudiniPixel.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//Urbanist
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Syne:wght@300;400;600;700&display=swap');
+
 #content {
   height: 100%;
   overflow: clip;
@@ -20,8 +30,8 @@
 }
 html {
   color: common.$font-color;  
-  line-height: 1.5;  
-  font-family: 'Lora';  
+  //line-height: 1.5;  
+  font-family: common.$body-font;  
 }
 body {    
   background-color: $bg-color;
