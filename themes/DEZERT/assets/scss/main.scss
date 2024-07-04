@@ -21,7 +21,7 @@
 }
 
 //Urbanist
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Syne:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;600;700&display=swap');
 
 #content {
   height: 100%;
@@ -53,7 +53,7 @@ header {
     text-decoration: none;
     color: $font-color;
     font-family: $body-font;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 2rem;
   }
 
@@ -81,8 +81,8 @@ header {
       margin: 0px;
       padding: 0px;
       font-size: 1.5rem;
-      font-weight: 600;
-      margin-right: 25px;
+      font-weight: 500;
+      margin-left: 30px;
     }
   }
 }
