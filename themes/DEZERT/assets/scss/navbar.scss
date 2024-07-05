@@ -58,29 +58,31 @@
     background-color: inherit;
   }
 
+
   /* Add a red background color to navbar links on hover */
   &:hover .dropbtn {
     background-color: common.$accent-color;
     font-weight: 600;
+    
+    transition: background-color 0.4s;
   }
 
-  /* Show the dropdown menu on hover */
+  /* Fade in the dropdown menu on hover */
   &:hover .dropdown-content {
-    display: block;
     @include common.flex(column, center, center);
+    display: block;
+    opacity: 100%;
+
+    visibility: visible;
+    transition: opacity 0.4s;
   }
-}
-
-.hover {
-  }
-
-.hover:hover {
-
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
-  display: none; /* Hidden by default */
+  visibility: none;
+  opacity: 0%;
+
   position: absolute; /* Position absolutely relative to the parent */
   top: 100%;
   background-color: inherit;
@@ -111,8 +113,7 @@
     transition: all 0.4s;
     box-shadow: none;
 
-
-    /* Add a grey background color to dropdown links on hover */
+    /* adds the hover red underline animation */
     &:hover {
       background-color: $darker-bg-color;
       box-shadow: 0px 5px 0px 0px common.$accent-color;
