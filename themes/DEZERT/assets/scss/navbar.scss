@@ -1,0 +1,106 @@
+@use "common";
+
+/* base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+  @include common.flex(row, space-between, center);
+  
+  max-width: 1000px;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    color: $font-color;
+    font-family: $body-font;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  #left {
+    @include common.flex(column);
+    align-self: center;
+    
+    margin: 0px;
+    font-size: 2rem;
+    line-height: 1;
+
+    #subtitle {
+      font-family: $body-font;
+      font-weight: 300;
+      font-size: 2rem;
+      margin: 0px;
+    }
+  }
+
+  #right {
+    @include common.flex(row, space-between);
+    align-self: center;
+  }
+}
+
+
+/* The dropdown container */
+.dropdown {
+  @include common.flex(row, center);
+  position: relative;
+  float: left;
+  margin-left: 30px;
+
+  .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  /* Add a red background color to navbar links on hover */
+  a:hover, .dropdown:hover .dropbtn {
+    background-color: common.$accent-color;
+  }
+
+  /* Show the dropdown menu on hover */
+  &:hover .dropdown-content {
+    display: block;
+    @include common.flex(column, center, center);
+  }
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute; /* Position absolutely relative to the parent */
+  top: 100%;
+  background-color: #f9f9f9;
+
+  min-width: 160px;
+  z-index: 1;
+
+  /* Links inside the dropdown */
+  a {
+    display: block;
+    color: black;
+
+    font-family: common.$body-font;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  /* Add a grey background color to dropdown links on hover */
+  a:hover {
+    background-color: #ddd;
+  }
+}
+
+
+

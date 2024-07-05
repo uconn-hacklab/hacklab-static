@@ -11,6 +11,7 @@
 @import "slide.scss";
 @import "content.scss";
 @import "pagination.scss";
+@import "navbar.scss";
 
 
 @font-face {
@@ -20,8 +21,7 @@
   font-style: normal;
 }
 
-//Urbanist
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 #content {
   height: 100%;
@@ -30,7 +30,6 @@
 }
 html {
   color: common.$font-color;  
-  //line-height: 1.5;  
   font-family: common.$body-font;  
 }
 body {    
@@ -43,50 +42,6 @@ header {
   @include common.flex(row, center);
   padding: 20px;
 }
-.navbar {
-  @include common.flex(row, space-between, center);
-  
-  max-width: 1000px;
-  width: 100%;
-
-  a {
-    text-decoration: none;
-    color: $font-color;
-    font-family: $body-font;
-    font-weight: 500;
-    font-size: 2rem;
-  }
-
-  #left {
-    @include common.flex(column);
-    align-self: center;
-    
-    margin: 0px;
-    font-size: 2rem;
-    line-height: 1;
-
-    #subtitle {
-      font-family: $body-font;
-      font-weight: 300;
-      font-size: 2rem;
-      margin: 0px;
-    }
-  }
-
-  #right {
-    @include common.flex(row, space-between);
-    align-self: center;
-    
-    a {
-      margin: 0px;
-      padding: 0px;
-      font-size: 1.5rem;
-      font-weight: 500;
-      margin-left: 30px;
-    }
-  }
-}
-
 
 a {
   text-decoration: none;
