@@ -4,7 +4,7 @@
   margin-bottom: 10px; 
   width: 100%;
   box-sizing: border-box; 
-  padding: 12.5px;
+  padding: 12.5px 0px;
 
   .date {
     @include common.flex(row, space-between);
@@ -38,6 +38,7 @@
     color: common.$accent-color;
   }
   h2 {
+    color: white;
   }
 }
 
