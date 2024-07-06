@@ -85,9 +85,8 @@
 
   position: absolute; /* Position absolutely relative to the parent */
   top: 100%;
-  background-color: inherit;
 
-  background-color: common.$bg-color;
+  background-color: rgba(common.$bg-color, common.$transparency);
   border-radius: 0px 0px 3.5px 3.5px;
   
   width: 100%;

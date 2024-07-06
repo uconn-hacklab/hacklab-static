@@ -66,6 +66,8 @@ h1, h2, h3, h4 {
 
 #survival-guide {
   width: 100%;
+  margin-bottom: 100px;
+
   hr { width: 100% }
   @include common.flex(column, center, center); 
 }
