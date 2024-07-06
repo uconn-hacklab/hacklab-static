@@ -1,6 +1,5 @@
 ---
 title: "hours and location"
-img: "<path here>"
 last_modified: "2024-07-06T00:00:00-00:00"
 ---
 ## General Body Meeting

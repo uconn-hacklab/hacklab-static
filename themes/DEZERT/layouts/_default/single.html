@@ -7,8 +7,6 @@
       {{ with $post.Params.summary }}
         <h3>{{ . }}</h3>
       {{ end }}
-
-
       <div class="date">
 
         <i>Last modified {{ $post.Params.last_modified | time.Format ":date_long" }}</i>
