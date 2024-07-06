@@ -29,13 +29,15 @@
     color: common.$font-color;
   }
 
-  h3, h1 {
+  h2, h1 {
     margin: 0px;
     font-family: common.$head-font;
     font-size: $title-size;
     font-weight: bold;
     line-height: 1.1;
-    color: common.$font-color;
+    color: common.$accent-color;
+  }
+  h2 {
   }
 }
 

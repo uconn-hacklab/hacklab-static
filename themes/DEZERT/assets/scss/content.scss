@@ -15,7 +15,8 @@ $body-size: 1.3rem;
   }
  
   h1 {
-    font-family: $body-font;
+    font-family: $head-font;
+    color: common.$accent-color;
     font-size: 2rem;
   }
   h2 {

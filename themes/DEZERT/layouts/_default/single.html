@@ -1,17 +1,17 @@
 {{ define "main" }}
-{{- partial "partials/head.html" . -}}
-{{- partial "partials/header.html" . -}}
-
 {{ $post := .Page }}
 <div class="single-container">
   <div class="post-page">
     <div id="post-head">
       <h1>{{ $post.Title }}</h1>
-      <h4>{{ $post.Summary }}</h4>
+      {{ with $post.Params.summary }}
+        <h3>{{ . }}</h3>
+      {{ end }}
+
 
       <div class="date">
 
-        <p>{{ $post.Date | time.Format ":date_long" }}</p>
+        <i>Last modified {{ $post.Params.last_modified | time.Format ":date_long" }}</i>
       </div>
     </div>
     <div class="content">
