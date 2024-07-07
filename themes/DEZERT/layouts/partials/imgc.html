@@ -17,11 +17,7 @@
     {{ with $.title }} alt="{{.}}" {{ end }}
     loading="{{ if isset . "loading"}}{{.}}{{else}}lazy{{end}}" 
 
-    style="
-        {{ with $.width  }} width: {{.}}; {{end}} 
-        {{ with $.height }} height: {{.}}; {{end}}
-        {{ with $.style}} {{.}} {{ end}}
-    "
+    style="{{ with $.width  }} width: {{.}}; {{end}}{{ with $.height }} height: {{.}}; {{end}}{{ with $.style}} {{.}} {{ end}}"
     />
 
 {{else}}
