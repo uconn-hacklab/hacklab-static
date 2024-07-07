@@ -13,10 +13,7 @@ Do not fret if you don't have the right experience. As long as you have a willin
 
 Currently we are seeking help for people to help with the following projects:
 
-## [our network](/our-network)
-A no-nonsense tool for students to find opportunities on campus or start find the perfect group of people to build their ideas.
-  - Frontend: Django
-  - Backend: Django, Docker, PostgreSQL 
+
 
 ## [parts+tools](/parts+tools)
 A utility for students to borrow parts and tools they need to build their projects, free of charge.
@@ -25,7 +22,7 @@ A utility for students to borrow parts and tools they need to build their projec
   - Hardware: ESP32, RFID, C
   - Also looking for hacklab *ambassadors* to help run the program
 
-This is actually part of the larger project, [lab of the future](/lab-of-the-future) whose goal is to make our lab as smart and easy to use as possible.
+This is actually part of the larger project, **lab of the future**, whose goal is to make our lab as smart and easy to use as possible.
 - Mechanical: 3D printing, CAD, and more
 
 ## our website
@@ -36,6 +33,20 @@ A place for students to learn about our organization and the projects we are wor
 
 # future projects
 Here are some ideas for projects we would like to get to but cannot at the moment:
+
+## #hackthecampus
+An informal student run hackathon. We need people to help with the logistics of running the event and coming up with cool themes.
+
+## crossroads
+A once a month networking event for like-minded students to meet and share ideas, their projects, and eat pizza. We need people to help with the logistics of running the event. 
+
+## makerfaire
+We are hoping to plan a trip to the Coney Island Maker Faire in the fall. We need people to help with the logistics of planning the trip.
+
+## our network
+A no-nonsense tool for students to find opportunities on campus or start find the perfect group of people to build their ideas.
+  - Frontend: Django
+  - Backend: Django, Docker, PostgreSQL 
 
 ## filament recycling
 A project to recycle 3D printer filament and reduce waste on campus. We need people to build out the network of clubs to collect waste from and find a company to recycle the plastic for reuse.

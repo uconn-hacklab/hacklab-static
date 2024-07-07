@@ -91,6 +91,8 @@ a {
 
 .hack-button {
   @include common.pill(20px, 5px 20px, 20px);
+  margin-top: 10px;
+  text-decoration: none;
   font-weight: bold;
   border: none;
 }
