@@ -3,12 +3,7 @@
 
 $welcome-width: 600px;
 
-h1 {
-  color: common.$accent-color;
-}
-h1, h2, h3, h4 {
-  font-family: common.$head-font;
-}
+
 
 .two-sided {
   @include common.flex(row, flex-start, center);
@@ -21,8 +16,12 @@ h1, h2, h3, h4 {
 }
 
 
-
 .landing-layout {
+  .hack-button {
+    color: white;
+    text-decoration: none;
+  }
+
   @include common.flex(column, center, center);
   height: 100%;
   width: 100%;
@@ -42,6 +41,7 @@ h1, h2, h3, h4 {
     left: 50vw;
     z-index: -1;
     margin-bottom: 100vh;
+    width: auto;
   }
 
   #welcome-container {
@@ -72,6 +72,7 @@ h1, h2, h3, h4 {
   }
 
   #testimonial {
+    img { width: auto; }
     b {
       margin-top: 10px;
       width: 150px;
@@ -88,13 +89,9 @@ h1, h2, h3, h4 {
 
   #text {
     margin-right: 50px;
-    li {
-      font-size: 20px;
-    }
   }
   #lab-space {
     border-radius: common.$img-radius;
-    height: 75%;
     object-fit: cover;
     aspect-ratio: 1.5 / 1;
   }
@@ -120,18 +117,81 @@ h1, h2, h3, h4 {
 }
 
 #volunteer-suggestions {
-  @include common.flex(column, space-between, center);
+  @include common.flex(column, space-between, flex-start);
   h1, h2 {
     margin: 0px;
   }
-  
-  
 }
 
 
+// make the landing page responsive and change the layout to a single column
+// when the screen width is less than 800px
+@media screen and (max-width: common.$content-width) {
+  .landing-layout {
+    .landing-container {
+      width: 100%;
+    }
+  }
+  .landing-hook {
+    height: 75vh;
+
+    #engineer {
+      height: 100vh;
+      position: absolute;
+      top: -50px;
+      left: 25vw;
+      z-index: -1;
+      margin-bottom: 100vh;
+    }
+  }
+
+  .two-sided {
+    @include common.flex(column, center, center);
+      .left {
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 10px;
+        padding: 0px;
+      }
+      .right {
+        padding: 0px;
+        width: 100%;
+        margin: 0px;
+      }
+  }
+  #our-mission {
+    #testimonial {
+      @include common.flex(column, center, center);
+      margin-bottom: 10px;
+    }
+  }
+
+  #what-we-offer {
+    height: auto;
+    #text {
+      margin-right: 0px;
+    }
+  }
+
+  // why is #our-tools extending past the screen width?
+  #our-tools {
+    @include common.flex(column, space-between);
+    .tool {
+      .left {
+        width: 100%;
+      }
+      .right {
+        height: auto;
+      }
+    }
+  }
+  #survival-guide {
+    margin: 0px;
+    margin-bottom: 10px;
+  }
 
 
-@media screen and (max-width: 1400px) {
 }
+
 
 

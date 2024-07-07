@@ -1,17 +1,18 @@
 {{ define "main"}}
 {{- partial "partials/footer.html" . -}}
-<div class="landing-layout">
+<div class="content landing-layout ">
   <div class="landing-container">
-    
+
     <div class="landing-hook">
-        {{ partial "imgc" (dict "id" "engineer" "src" "images/engineer.png" "resize" "1000x webp photo q75")}}
+      {{ partial "imgc" (dict "id" "engineer" "src" "images/engineer.png" "resize" "1000x webp photo q75")}}
       <div id="welcome-container">
         <div>
-          <h1>join the premier community of budding hackers, makers, artists, inventors, scientists, and entrepreneurs at uconn.</h1>
+          <h1>join the premier community of budding hackers, makers, artists, inventors, scientists, and entrepreneurs
+            at uconn.</h1>
           <i>we built this site btw</i>
         </div>
-        <a href="new-members/" class="hack-button">join today &#10140;</a>
-      </div> 
+        <a href="/new-members/" class="hack-button">join today &#10140;</a>
+      </div>
     </div>
 
     <div id="survival-guide">
@@ -30,56 +31,63 @@
       <div class="right" id="text">
         <h1>our mission</h1>
         <p>
-          Hacklab is a budding grassroots initiative to bring together the innovators, creators, and dreamers of UConn. We are the kind of people whose spirit and passion tug upon our hearts and minds to satisfy our need for learning, creation, community, and ultimately purpose. <br><br> We pride ourselves on our attitude towards life. We say "can" while others chant "cannot". We leave our cynicism at the door and welcome the possibilities. <br> <br> We build each other up through honesty and gratuitous embetterment of each other. Life is not a zero sum game. We aim to connect one another with the resources needed to succeed, inspire, and forge lifelong connections in the process. <br><br> Individually we are talented. Together we are unstoppable. Join us and be part of something extraordinary! <br><br> Go UConn!!!
-        </p> 
+          Hacklab is a budding grassroots initiative to bring together the innovators, creators, and dreamers of UConn.
+          We are the kind of people whose spirit and passion tug upon our hearts and minds to satisfy our need for
+          learning, creation, community, and ultimately purpose. <br><br> We pride ourselves on our attitude towards
+          life. We say "can" while others chant "cannot". We leave our cynicism at the door and welcome the
+          possibilities. <br> <br> We build each other up through honesty and gratuitous embetterment of each other.
+          Life is not a zero sum game. We aim to connect one another with the resources needed to succeed, inspire, and
+          forge lifelong connections in the process. <br><br> Individually we are talented. Together we are unstoppable.
+          Join us and be part of something extraordinary! <br><br> Go UConn!!!
+        </p>
       </div>
     </div>
 
 
     <div class="two-sided" id="what-we-offer">
       <div class="left" id="text">
-        <h1>what we offer</h1> 
+        <h1>what we offer</h1>
         <ul>
           <li>The space to build and collaborate on your ideas</li>
           <li>A vibrant online community to meet and discuss virtually</li>
           <li>Online tools to find the people and resources you need most</li>
           <li>And more to come!</li>
         </ul>
-      </div> 
+      </div>
       {{ partial "imgc" (dict "class" "right" "id" "lab-space" "src" "images/lab-space.jpg" "resize" "1000x webp photo q50")}}
     </div>
-  </div>
 
+    <div id="our-tools">
+      <h1>our tools</h1>
+      <!-- <div class="two-sided tool" id=""> -->
+      <!--  <div class="left"> -->
+      <!--   <h2>find or create your next opportunity in the blink of an eye</h2>  -->
+      <!--   <p>Find student projects, professors, and other oppoortunities looking for help on campus here! <br><br> Or publicize your own project here! </p> -->
+      <!--   <button class="hack-button" type="button">lets do this!</button> -->
+      <!--  </div>  -->
+      <!--  <div class="right"> -->
+      <!--  </div> -->
+      <!-- </div> -->
 
-  <div id="our-tools">
-    <h1>our tools</h1>
-    <!-- <div class="two-sided tool" id=""> -->
-    <!--  <div class="left"> -->
-    <!--   <h2>find or create your next opportunity in the blink of an eye</h2>  -->
-    <!--   <p>Find student projects, professors, and other oppoortunities looking for help on campus here! <br><br> Or publicize your own project here! </p> -->
-    <!--   <button class="hack-button" type="button">lets do this!</button> -->
-    <!--  </div>  -->
-    <!--  <div class="right"> -->
-    <!--  </div> -->
-    <!-- </div> -->
-
-    <div class="two-sided tool">
-     <div class="left">
-      <h2>things shouldn't sit around to collect dust</h2>
-      <p>Borrow tools and components free of charge from organizations on campus</p>
-      <button class="hack-button" type="button">onwards!</button>
-     </div> 
-     <div class="right">
-     </div>
+      <div class="two-sided tool">
+        <div class="left">
+          <h2>things shouldn't sit around to collect dust</h2>
+          <p>Borrow tools and components free of charge from organizations on campus</p>
+          <a href="/parts+tools" class="hack-button">onwards!</a>
+        </div>
+        <div class="right">
+        </div>
+      </div>
     </div>
 
-    <h2>and more to come!</h2>
+    <div id="volunteer-suggestions">
+      <h1>have a suggestion or want to volunteer?</h1>
+
+      <p><a href="/volunteer">Learn more</a> about all the cool projects we have planned. </p>
+      
+    </div>
+
+
   </div>
-  
-  <div id="volunteer-suggestions">
-    <h1>have a suggestion or want to volunteer?</h1>
-    
-    <p>Learn more about all the cool projects we have planned. </p>
-    <a href="/volunteer">Learn more here!</a> 
-  </div>
+</div>
 {{ end }}

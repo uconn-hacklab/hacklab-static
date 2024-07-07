@@ -5,7 +5,6 @@ $body-size: 1.3rem;
 .content {
   width: 100%;
   font-family: $body-font;
-  font-size: 1rem;
   color: $font-color;
   margin-bottom: 75px;
 
@@ -30,7 +29,7 @@ $body-size: 1.3rem;
     }
   }
   h3 {
-    font-family: $body-font; 
+    font-family: $head-font; 
     font-size: 1.5rem;
     a {
      font-size: inherit;
@@ -66,15 +65,15 @@ $body-size: 1.3rem;
   }
   
   ol, ul {
+    font-size: $body-size;
+    line-height: 1.58;
     margin-left: 20px;
   }
 
   a {
     @include common.link();
-    font-size: $body-size;
   }
   li {
-    font-size: $body-size;
     margin-bottom: 10px;
   } 
   ol > li::marker {
@@ -119,7 +118,6 @@ $body-size: 1.3rem;
     p {
       font-weight: 700;
       font-family: $body-font;
-      font-size: $body-size;
     }
   }
 

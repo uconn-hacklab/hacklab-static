@@ -110,6 +110,12 @@ a {
   border-radius: 50%;
 }
 
+@media screen and (max-width: common.$content-width) {
+  #content {
+    padding: 0px 17.5px;
+  }
+}
+
 @media screen and (max-width: 450px) {
   html {
     font-size: 11px;
