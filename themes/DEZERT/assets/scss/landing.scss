@@ -89,10 +89,14 @@ $welcome-width: 600px;
   #text {
     margin-right: 50px;
   }
+
   #lab-space {
     border-radius: common.$img-radius;
     object-fit: cover;
     aspect-ratio: 1.5 / 1;
+  }
+  .right {
+    max-width: 50%;
   }
 }
 
