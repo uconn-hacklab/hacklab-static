@@ -40,12 +40,11 @@ $welcome-width: 600px;
     top: -50px;
     left: 50vw;
     z-index: -1;
-    margin-bottom: 100vh;
     width: auto;
   }
 
   #welcome-container {
-    width: 400px;
+    width: 450px;
     position: relative;
     top: 30%;
     h1 {
@@ -132,6 +131,7 @@ $welcome-width: 600px;
       width: 100%;
     }
   }
+
   .landing-hook {
     height: 75vh;
 
@@ -141,7 +141,10 @@ $welcome-width: 600px;
       top: -50px;
       left: 25vw;
       z-index: -1;
-      margin-bottom: 100vh;
+    }
+
+    #welcome-container {
+      width: 75vw;
     }
   }
 

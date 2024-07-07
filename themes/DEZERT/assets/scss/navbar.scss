@@ -1,21 +1,16 @@
 @use "common";
 
-/* base styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+$animation-time: 0.3s;
 
 .navbar {
   @include common.flex(row, space-between, center);
   
+  padding: 30px;
   max-width: 1000px;
   width: 100%;
 
   #left {
-    @include common.flex(column);
-    align-self: center;
+    @include common.flex(row, space-between, center);
     
     margin: 0px;
     font-size: 2rem;
@@ -31,11 +26,10 @@
 
   #right {
     @include common.flex(row, space-between, center);
-    align-self: center;
   }
 
   #hamburger {
-    display: inline-block;
+    display: none;
     max-height: 1.5rem;
     max-width: 1.5rem;
     fill: white;
@@ -81,13 +75,13 @@
     opacity: 100%;
 
     visibility: visible;
-    transition: opacity 0.4s;
+    transition: opacity 0.4s ease-in;
   }
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
-  visibility: none;
+  visibility: hidden;
   opacity: 0%;
 
   position: absolute; /* Position absolutely relative to the parent */
@@ -128,32 +122,78 @@
 
 }
 
+ /* When the screen is less than content width, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: common.$content-width) {
+  // This is the styling to start displaying the dropdown menu on hamburger click
+  .navbar.responsive {
+    background-color: common.$bg-color;
+    border-radius: 0px 0px 5px 5px;
 
-// Make the navbar responseive
-@media screen and (max-width: 600px) {
+    .dropdown {
+      // Fade in the dropdown items on hamburger click
+      opacity: 100%; 
+      visibility: visible;
+
+      @include common.flex(column, center, center);
+      width: 100%;
+    }
+  }
+
+  // Javascript adds this class to the dropdown when the section is clicked 
+  .dropdown.section-clicked{
+    .dropdown-content {
+      display: block;
+      visibility: visible;
+      opacity: 100%;
+      position: inherit;
+    }
+
+    .dropbtn {
+      font-weight: 600;
+      background-color: common.$accent-color;
+    }
+  }
+  
+  // this is how to style the navbar for this screen size 
   .navbar {
     @include common.flex(column, center, center);
-    padding: 10px;
-    font-size: 1.5rem;
+    transition: background-color $animation-time ease-in;
+
+    .dropdown {
+      all: unset; // clear the hover effects to prevent conflicting behavior
+      visibility: hidden;
+      
+      // Initially when hamburger is not clicked, the dropdown items are hidden
+      opacity: 0%;
+      transition: opacity $animation-time ease-in;
+
+      .dropbtn {
+        max-width: none;
+        border-radius: 5px;
+        width: 100%;
+      }
+    }
 
     #left {
+      @include common.flex(row, space-between, center);
+      width: 100%;
       margin-bottom: 10px;
+
+      #hamburger {
+        display: inline-block;
+
+        max-width: 2rem;
+        max-height: 2rem;
+      }
     }
 
     #right {
       @include common.flex(column, center, center);
+      width: 100%;
     }
   }
 
-  .dropdown {
-    @include common.flex(column, center, center);
-    width: 100%;
-  }
-
-  .dropdown-content {
-    top: 0;
-    border-radius: 0px;
-  }
 }
+
 
 

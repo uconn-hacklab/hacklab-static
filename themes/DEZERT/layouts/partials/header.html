@@ -1,9 +1,12 @@
 
 <header>  
-  <nav class="navbar" role="navigation">  
+  <nav class="navbar" id="navbar" role="navigation">  
     <div id="left"> 
-      <a href="/">
+      <a id="logo" href="/">
         {{ partial "partials/icon.html" (dict "icon" "hacklab-logo") }}
+      </a>
+      <a id="hamburger" href="javascript:void(0);" onclick="triggerHamburger()">
+        {{ partial "partials/icon.html" (dict "icon" "hamburger") }}
       </a>
     </div>  
     <div id="right">  
@@ -54,9 +57,8 @@
       <!--     <a href="#">makerfaire</a> -->
       <!--   </div> -->
       <!-- </div> -->
-      <a href="javascript:void(0);" id="hamburger">
-        {{ partial "partials/icon.html" (dict "icon" "hamburger") }}
-      </a>
+      
     </div>  
+    
   </nav>  
 </header>  
