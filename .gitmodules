@@ -1,0 +1,4 @@
+[submodule "hacklab.github.io"]
+	path = public/ 
+	url = https://github.com/kalinkochnev/hacklab.github.io
+	branch = main
