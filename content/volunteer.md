@@ -40,6 +40,10 @@ Here are some ideas for projects we would like to get to but cannot at the momen
 ## filament recycling
 A project to recycle 3D printer filament and reduce waste on campus. We need people to build out the network of clubs to collect waste from and find a company to recycle the plastic for reuse.
 
+## one mans junk is another mans treasure
+A project to collect and refurbish old electronics and give them to students who need them. We need people to help with the logistics of collecting and distributing the electronics.
+
+
 
 
 # start your own! 

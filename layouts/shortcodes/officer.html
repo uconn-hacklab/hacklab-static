@@ -1,0 +1,12 @@
+<div class="eboard-card two-sided">
+    <div class="left">
+      {{ partial "imgc" (dict "class" "profile" "src" (.Get "image") "resize" "250x webp photo q50")}}
+    </div>
+    <div class="right">
+      <h1>{{.Get "name"}}</h1>
+      <h3>{{.Get "position"}}</h3>
+      {{.Inner | markdownify }}
+    </div>
+    
+  </div> 
+

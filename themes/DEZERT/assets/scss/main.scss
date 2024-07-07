@@ -12,6 +12,7 @@
 @import "content.scss";
 @import "pagination.scss";
 @import "navbar.scss";
+@import "officer.scss";
 
 
 @font-face {
@@ -99,11 +100,12 @@ a {
   font-weight: bold;
 }
 
-
-.star-icon {
-  display: inline-block;
-  max-height: 1.5rem;
-  max-width: 1.5rem;
+.profile {
+  width: 225px;
+  height: 225px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 450px) {

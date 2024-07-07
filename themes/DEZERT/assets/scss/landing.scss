@@ -20,14 +20,6 @@ h1, h2, h3, h4 {
   }
 }
 
-.profile {
-  width: 225px;
-  height: 225px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
 
 
 .landing-layout {
@@ -133,36 +125,7 @@ h1, h2, h3, h4 {
     margin: 0px;
   }
   
-  .eboard-card {
-    margin-top: 20px;
-    border: 2.5px solid gray;
-    border-radius: 15px;
-    padding: 7.5px 10px;
-    text-align: right;
-
-    h2, h3 {
-      margin: 0px;
-    }
-    
-    .contact {
-      @include common.flex(column, flex-start, flex-end);
-    }
-
-    .left {
-      margin-right: 17.5px;
-
-      .profile {
-        width: 150px;
-        height: 150px;
-      }
-    }
-    .right {
-      b,p { margin: 0px; font-size: 12px; }
-      word-break: keep-all;
-      align-text: right;
-      width: 375px;
-    }
-  }
+  
 }
 
 
