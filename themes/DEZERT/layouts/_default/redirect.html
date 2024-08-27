@@ -1,0 +1,13 @@
+{{ define "main" }}
+<meta http-equiv="Refresh" content="0; url='{{ .Params.redirect_link }}'" />
+
+<div class="single-container">
+  <div class="post-page">
+    <div class="content">
+        If you didn't get redirected, <a href="{{ .Params.redirect_link }}">Click here</a>
+      {{ $.Content}}
+    </div>
+  </div>
+</div>
+{{ end }}
+
