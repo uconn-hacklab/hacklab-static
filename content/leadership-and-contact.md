@@ -9,7 +9,7 @@ For general inquiries or old equipment donations, please contact our current lea
 [kalinkochnev.com](https://kalinkochnev.com)
 [kalin.kochnev@gmail.com](mailto:kalin.kochnev@gmail.com)
 
-**Interests:** books, blogging, embedded, systems programming, controls
+**Interests:** books, blogging, embedded, systems programming, controls.
 {{</officer>}}
 
 {{<officer image="images/vihaan-profile.png" name="vihaan shah" position="vice-president/co-founder">}}
@@ -20,7 +20,8 @@ For general inquiries or old equipment donations, please contact our current lea
 {{</officer>}}
 
 
-{{<officer image="images/kalin.png" name="aiden pringle" position="treasurer">}}
+{{<officer image="images/aiden-profile.jpg" name="aiden pringle" position="treasurer">}}
+
 {{</officer>}}
 
 {{<officer image="images/johnmichael-profile.png" name="john michael" position="secretary">}}
