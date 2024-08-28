@@ -21,6 +21,7 @@ For general inquiries or old equipment donations, please contact our current lea
 
 
 {{<officer image="images/aiden-profile.jpg" name="aiden pringle" position="treasurer">}}
+Junior robotics engineering major with a passion for cars, 3D printers, and creating things that don't make sense. On the side, I love mechanical keyboards, nature, and playing rhythm games.
 
 {{</officer>}}
 
