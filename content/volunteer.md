@@ -13,19 +13,10 @@ Do not fret if you don't have the right experience. As long as you have a willin
 
 Currently we are seeking help for people to help with the following projects:
 
+## TODO: audio synth
+## TODO: mini-mill
 
 
-## [parts+tools](/parts+tools)
-A utility for students to borrow parts and tools they need to build their projects, free of charge.
-  - Frontend: Django 
-  - Backend: Django, Docker, PostgreSQL
-  - Hardware: ESP32, RFID, C
-  - Also looking for hacklab *ambassadors* to help run the program
-
-This is actually part of the larger project, **lab of the future**, whose goal is to make our lab as smart and easy to use as possible.
-- Mechanical: 3D printing, CAD, and more
-
-## our website
 A place for students to learn about our organization and the projects we are working on.
   - Frontend: Hugo, Markdown, HTML, CSS
   - We need content writers too!
@@ -33,6 +24,13 @@ A place for students to learn about our organization and the projects we are wor
 
 # future projects
 Here are some ideas for projects we would like to get to but cannot at the moment:
+
+## parts+tools
+A utility for students to borrow parts and tools they need to build their projects, free of charge.
+  - Frontend: Django 
+  - Backend: Django, Docker, PostgreSQL
+  - Hardware: ESP32, RFID, C
+  - Also looking for hacklab *ambassadors* to help run the program
 
 ## #hackthecampus
 An informal student run hackathon. We need people to help with the logistics of running the event and coming up with cool themes.
