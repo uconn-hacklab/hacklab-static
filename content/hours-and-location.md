@@ -1,12 +1,9 @@
 ---
 title: "hours and location"
-last_modified: "2024-07-06T00:00:00-00:00"
+last_modified: "2025-08-29T00:00:00-00:00"
 ---
 ## General Body Meeting
-Friday @ 3-5pm
+Friday @ 6-8pm
 
-## Open Hours
-Monday, Wednesday @ 3-5pm
-
-*Meetings are held in* **Engineering II Room 112** *unless otherwise noted.*
+*Meetings are held in* **Castleman 126 (Basement)** *unless otherwise noted.*
     
