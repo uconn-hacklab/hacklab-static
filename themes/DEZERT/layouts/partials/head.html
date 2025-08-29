@@ -1,6 +1,6 @@
 {{ $opts := dict "transpiler" "dartsass" }}
 {{ $scss := resources.Get "scss/main.scss" }}
-{{ $styles := $scss | resources.ToCSS $opts }}
+{{ $styles := $scss | css.Sass $opts }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 
 <!-- Batch load images script-->

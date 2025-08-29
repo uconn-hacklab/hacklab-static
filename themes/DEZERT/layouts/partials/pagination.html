@@ -28,7 +28,7 @@
     {{ if ne $paginator.PageNumber 1 }}
     <li class="pagination__item first">
       <a class="pagination__link first" href="{{ $paginator.First.URL }}">
-        {{ partial "partials/icon.html" (dict "icon" "double-chevron") }}
+        {{ partial "icon.html" (dict "icon" "double-chevron") }}
       </a>
     </li>
     {{ end }}
@@ -37,7 +37,7 @@
     {{ if $paginator.HasPrev }}
     <li class="pagination__item previous">
       <a href="{{ $paginator.Prev.URL }}" class="pagination__link previous">
-       {{ partial "partials/icon.html" (dict "icon" "chevron") }}
+       {{ partial "icon.html" (dict "icon" "chevron") }}
       </a>
       
     </li>
@@ -105,7 +105,7 @@
     {{ if $paginator.HasNext }}
     <li class="pagination__item next">
       <a href="{{ $paginator.Next.URL }}" class="pagination__link next">
-        {{ partial "partials/icon.html" (dict "icon" "chevron") }}
+        {{ partial "icon.html" (dict "icon" "chevron") }}
       </a>
     </li>
     {{ end }}
@@ -114,7 +114,7 @@
     {{ if ne $paginator.PageNumber $paginator.TotalPages }}
     <li class="pagination__item last">
       <a class="pagination__link last" href="{{ $paginator.Last.URL }}">
-        {{ partial "partials/icon.html" (dict "icon" "double-chevron") }}
+        {{ partial "icon.html" (dict "icon" "double-chevron") }}
       </a>
     </li>
     {{ end }}
