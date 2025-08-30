@@ -5,7 +5,7 @@ last_modified: "2024-07-06T00:00:00-00:00"
 For general inquiries or old equipment donations, please contact our current leadership. If you are interested in getting involved, please see our [volunteer page](/volunteer). 
 
 # 2025-2026 eboard
-{{<officer image="images/johnmichael-profile.png" name="john michael" position="president">}}
+{{<officer image="images/johnmichael-profile.png" name="john-michael mendez" position="president">}}
 Passionate about building creative solutions to help people and keep childlike wonder alive. Rising materials science and engineering junior.
 {{</officer>}}
 
@@ -46,7 +46,7 @@ Junior robotics engineering major with a passion for cars, 3D printers, and crea
 
 {{</officer>}}
 
-{{<officer image="images/johnmichael-profile.png" name="john michael" position="secretary">}}
+{{<officer image="images/johnmichael-profile.png" name="john-michael mendez" position="secretary">}}
 Passionate about building creative solutions to help people and keep childlike wonder alive. Rising materials science and engineering sophomore.
 {{</officer>}}
 
