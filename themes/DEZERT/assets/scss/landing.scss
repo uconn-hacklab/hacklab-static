@@ -10,9 +10,6 @@ $welcome-width: 600px;
   .left {
     margin-right: 50px;
   }
-  .right {
-
-  }
 }
 
 
@@ -54,14 +51,6 @@ $welcome-width: 600px;
 }
 
 
-
-#survival-guide {
-  width: 100%;
-  margin-bottom: 100px;
-
-  hr { width: 100% }
-  @include common.flex(column, center, center); 
-}
 
 #our-mission {
   margin-bottom: 100px;
@@ -109,12 +98,13 @@ $welcome-width: 600px;
     .left {
       width: 450px;
     }
-    .right {
-      height: 250px;
 
-      aspect-ratio: 1.5 / 1;
-      background-color: gray;
-      border-radius: common.$img-radius;
+    .right {
+      img {
+        background-color: transparent;
+      }
+
+      width: 200px;
     }
   }
 }
@@ -155,6 +145,7 @@ $welcome-width: 600px;
   .two-sided {
     @include common.flex(column, center, center);
       .left {
+        min-width: auto;
         width: 100%;
         margin: 0px;
         margin-bottom: 10px;

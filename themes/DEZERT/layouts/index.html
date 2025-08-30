@@ -1,93 +1,316 @@
 {{ define "main"}}
 {{- partial "footer.html" . -}}
 <div class="content landing-layout ">
-  <div class="landing-container">
+	<div class="landing-container">
 
-    <div class="landing-hook">
-      {{ partial "imgc" (dict "id" "engineer" "src" "images/engineer.png" "resize" "1000x webp photo q75")}}
-      <div id="welcome-container">
-        <div>
-          <h1>join the premier community of budding hackers, makers, artists, inventors, scientists, and entrepreneurs
-            at uconn.</h1>
-          <i>we built this site btw</i>
-        </div>
-        <a href="/new-members/" class="hack-button">join today &#10140;</a>
-      </div>
-    </div>
-
-    <div id="survival-guide">
-      <hr>
-      <span>
-        are you a new student? check out our survival guide <a href="/survival-guide">here</a>
-      </span>
-      <hr>
-    </div>
-
-    <div class="two-sided" id="our-mission">
-      <div class="left" id="testimonial">
-        {{ partial "imgc" (dict "class" "profile" "src" "images/kalin.png" "resize" "250x webp photo q50")}}
-        <b>Kalin Kochnev '25, Co-founder</b>
-      </div>
-      <div class="right" id="text">
-        <h1>our mission</h1>
-        <p>
-          Hacklab is a budding grassroots initiative to bring together the innovators, creators, and dreamers of UConn.
-          We are the kind of people whose spirit and passion tug upon our hearts and minds to satisfy our need for
-          learning, creation, community, and ultimately purpose. <br><br> We pride ourselves on our attitude towards
-          life. We say "can" while others chant "cannot". We leave our cynicism at the door and welcome the
-          possibilities. <br> <br> We build each other up through honesty and gratuitous embetterment of each other.
-          Life is not a zero sum game. We aim to connect one another with the resources needed to succeed, inspire, and
-          forge lifelong connections in the process. <br><br> Individually we are talented. Together we are unstoppable.
-          Join us and be part of something extraordinary! <br><br> Go UConn!!!
-        </p>
-      </div>
-    </div>
+		<div class="landing-hook">
+			{{ partial "imgc" (dict "id" "engineer" "src" "images/engineer.png" "resize" "1000x webp photo q75")}}
+			<div id="welcome-container">
+				<div>
+					<h1>join the premier community of budding hackers, makers, artists, inventors, scientists, and
+						entrepreneurs
+						at uconn.</h1>
+					<i>we built this site btw</i>
+				</div>
+				<a href="/new-members/" class="hack-button">join today &#10140;</a>
+			</div>
+		</div>
 
 
-    <div class="two-sided" id="what-we-offer">
-      <div class="left" id="text">
-        <h1>what we offer</h1>
-        <ul>
-          <li>The space to build and collaborate on your ideas</li>
-          <li>A vibrant online community to meet and discuss virtually</li>
-          <li>Online tools to find the people and resources you need most</li>
-          <li>And more to come!</li>
-        </ul>
-      </div>
-      {{ partial "imgc" (dict "class" "right" "id" "lab-space" "src" "images/lab-space.jpg" "resize" "1000x webp photo q50")}}
-    </div>
 
-    <div id="our-tools">
-      <h1>our tools</h1>
-      <!-- <div class="two-sided tool" id=""> -->
-      <!--  <div class="left"> -->
-      <!--   <h2>find or create your next opportunity in the blink of an eye</h2>  -->
-      <!--   <p>Find student projects, professors, and other oppoortunities looking for help on campus here! <br><br> Or publicize your own project here! </p> -->
-      <!--   <button class="hack-button" type="button">lets do this!</button> -->
-      <!--  </div>  -->
-      <!--  <div class="right"> -->
-      <!--  </div> -->
-      <!-- </div> -->
+		<div class="two-sided" id="our-mission">
+			<div class="left" id="testimonial">
+				{{ partial "imgc" (dict "class" "profile" "src" "images/kalin.png" "resize" "250x webp photo q50")}}
+				<b>Kalin Kochnev '25, Co-founder</b>
+			</div>
+			<div class="right" id="text">
+				<h1>our mission</h1>
+				<p>
+					Hacklab is a budding grassroots initiative to bring together the innovators, creators, and dreamers
+					of UConn.
+					We are the kind of people whose spirit and passion tug upon our hearts and minds to satisfy our need
+					for
+					learning, creation, community, and ultimately purpose. <br><br> We pride ourselves on our attitude
+					towards
+					life. We say "can" while others chant "cannot". We leave our cynicism at the door and welcome the
+					possibilities. <br> <br> We build each other up through honesty and gratuitous embetterment of each
+					other.
+					Life is not a zero sum game. We aim to connect one another with the resources needed to succeed,
+					inspire, and
+					forge lifelong connections in the process. <br><br> Individually we are talented. Together we are
+					unstoppable.
+					Join us and be part of something extraordinary! <br><br> Go UConn!!!
+				</p>
+			</div>
+		</div>
 
-      <div class="two-sided tool">
-        <div class="left">
-          <h2>things shouldn't sit around to collect dust</h2>
-          <p>Borrow tools and components free of charge from organizations on campus</p>
-          <a href="/parts+tools" class="hack-button">onwards!</a>
-        </div>
-        <div class="right">
-        </div>
-      </div>
-    </div>
+		<div id="meeting-info">
+			<h1>meeting and location</h1>
+			<p>
+				The most up to date meeting information will be posted on our Discord. See also our <a
+					href="/hours-and-location">hours and location</a> page.</p>
 
-    <div id="volunteer-suggestions">
-      <h1>have a suggestion or want to volunteer?</h1>
+		</div>
+		<br />
+		<br />
 
-      <p><a href="/volunteer">Learn more</a> about all the cool projects we have planned. </p>
-      
-    </div>
+		<div id="online-community">
+			<h1>our community</h1>
+			<p>We host a vibrant online community of makers to meet and discuss cool stuff. You can join our discord <a
+					href="/discord">here!</a> We have a network of alumni and professors to connect you with amazing
+				opportunities</p>
+		</div>
+
+		<br />
+		<br />
+
+		<div id="workshop-schedule">
+
+			<h1>workshop schedule fall 2025</h1>
+
+			<p>We host weekly workshops made by students or other special guests on fascinating topics. Whether you are
+				the most or least experienced individual, the workshops are designed for everyone to gain value from
+				them.
+			</p>
+
+			<p>
+				We try to emphasize intuitive understanding through visualizations and hands on work to compliment
+				skills learned in class.
+			</p>
+			<br />
+
+			<div id="table-container">
+				<table>
+					<thead style="background-color: darkgray">
+						<tr>
+							<th>Date</th>
+							<th>Title</th>
+							<th>Presenter</th>
+							<th>Topics</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>9/5/2025</td>
+							<td>What is Hacklab?</td>
+							<td>E-board</td>
+							<td>Hacklab history, shop tour, club projects overview</td>
+						</tr>
+						<tr>
+							<td>9/12/2025</td>
+							<td><b>2-in-1 Workshop:</b>
+								<ol>
+									<li><a href="https://youtu.be/dXl-L2wM1eA?si=loWBd71_dgLQbEOQ"> Systems Programming:
+											Everything is Trying to Kill You and How to Stop It </a></li>
+									<li>Build your own Blockhain in Rust</li>
+								</ol>
+							</td>
+							<td><a href="https://kalinkochnev.com">Kalin Kochnev</a></td>
+							<td>Rust, C/C++, operating systems, microcontrollers, supercomputers,
+								blockchain, cryptographic hashing.</td>
+						</tr>
+						<tr>
+							<td>9/19/2025</td>
+							<td>Rotations</td>
+							<td><a href="https://www.shahvihaan.com/">Vihaan Shah </a></td>
+							<td>Robotics, quaternions, computer graphics</td>
+						</tr>
+						<tr>
+							<td>9/26/2025</td>
+							<td>Workshop: Learn CAD and 3D Print Your Own Design</td>
+							<td>Kalin Kochnev</td>
+							<td>OnShape, multi-view drawing, 3D printing/slicing</td>
+						</tr>
+						<tr>
+							<td>10/3/2025</td>
+							<td>Workshop: How do we measure what we can't see? A signal processing approach</td>
+							<td>Kalin Kochnev</td>
+							<td>Triangulation, LTI systems, convolution, Laplace transform, Fourier transform</td>
+						</tr>
+						<tr>
+							<td>10/10/2025</td>
+							<td><u>Unconfirmed</u> Machine Learning workshop</td>
+							<!--
+							<td>Intro to ML</td>
+							<td>Rany Kamel</td>
+							<td></td>
+							-->
+						</tr>
+						<tr>
+							<td>10/17/2025</td>
+							<td>Live Demo: Machining at the Machine Shop</td>
+							<td><a href="https://seanrescsanski.com/about">Sean Rescsanski</a></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>10/24/2025</td>
+							<td>Workshop: Quantum Computing</td>
+							<td><a href="https://walterkrawec.org/index.html">Professor Walter Kraweck</a></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>10/31/2025</td>
+							<td>Everything Wants to Faceplant. A Talk on PID Control.<br> <br> (pre-req: workshop
+								on 10/3/25)</td>
+							<td>Kalin Kochnev</td>
+							<td>Visualizations, classical control systems, signal processing, robotics, stability,
+								convolution, differential equations</td>
+						</tr>
+						<tr>
+							<td>11/7/2025</td>
+							<td>Workshop: Intro to Modern Controls</td>
+							<td>Vihaan Shah</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>11/14/2025</td>
+							<td>Workshop: Intro to Motion Planning</td>
+							<td>Kalin Kochnev</td>
+							<td>Dijkstra's algorithm, A*, Rapidly-exploring Random Trees, Probabilistic Roadmaps</td>
+						</tr>
+						<tr>
+							<td>11/21/2025</td>
+							<td>Workshop: Intro to KiCad</td>
+							<td>Ken Premo</td>
+							<td>PCB design</td>
+						</tr>
+						<tr>
+							<td>11/28/2025</td>
+							<td>Farewell. Advice from a maker</td>
+							<td>Kalin Kochnev</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>12/5/2025</td>
+							<td>Finals week - no meeting</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<br />
+		<br />
+
+		<div id="club-projects">
+			<h1>active club projects</h1>
+			<p>We offer a few club-wide projects for students who want a more structured approach to making. No prior
+				experience is required. The depth/difficulty of the projects can scale depending on how much of a
+				challenge you are looking for. Each of these projects are designed to have a smooth learning curve for
+				beginners but the possibilities are essentially limitless if you want to learn more. </p>
+
+			<br />
+			<br />
+
+			<div>
+				<div class="two-sided">
+					<div class="left">
+						<h2>DIY Audio Synthesizer</h2>
+						<p>We are following <a href="https://www.ericasynths.lv/shop/diy-kits-1/edu-diy-vco/">Moritz
+								Klein and Erica Synth's</a> super amazing kit that takes you from ground zero of
+							circuits
+							(what is current/voltage?) all the way to the schematics and modules necessary to build your
+							own
+							synthesizer!</p>
+
+					</div>
+					<div class="right">
+						<a href="https://youtu.be/8JuYLLpZzBs?si=f-KcrZjIHEJlKmiW&t=324"><img
+								src="/images/audiosynth.png" /></a>
+					</div>
+
+				</div>
+				<br />
+				<p>Click on the image to see a demo!</p>
+				<p><b>Topics:</b> music production, analog circuits (op-amps, transistors), signal processing.</p>
+				<p><b>Difficulty:</b> easy - hard</p>
+			</div>
+			<br />
+
+			<br />
+
+			<div class="two-sided">
+				<div class="left">
+					<h2>MILO Mini-Mill Kit</h2>
+					<p>We are assembling the <a href="https://docs.ldomotors.com/en/milo/milov15">LDO Milo V1.5 CNC
+							Mini-mill kit</a>. They have extremely detailed instructions so anyone can follow along.
+						Mills are an invaluable tool for
+						manufacturing with woods and metals and we plan to use this for instructional lessons in the
+						future!</p>
+
+					<p><b>Topics:</b> electro-mechanical systems, machining.</p>
+					<p><b>Difficulty:</b> easy</p>
+				</div>
+				<div class="right">
+					<img src="/images/milomill.png" />
+				</div>
+			</div>
 
 
-  </div>
+		</div>
+		<br />
+		<br />
+		<div id="personal-projects">
+			<h1>past student projects</h1>
+			<p>We also highly encourage students to pursue their own projects! That's the primary reason this club and
+				all
+				of its resources exist. Here are some projects that have been worked on by past members.</p>
+
+			<br />
+			<br />
+
+			<div class="two-sided">
+				<div class="left" style="min-width: 400px">
+					<h2>Autocycle</h2>
+					<p>A completely driverless bicycle, both self-piloting and self-stabilizing. <a
+							href="https://kalinkochnev.com/journey/stabilizingbike/"> Website </a>
+					</p>
+					<p><b>Members:</b> Kalin Kochnev, Vihaan Shah
+				</div>
+				<div class="right">
+					<img src="/images/autocycle.jpg" />
+				</div>
+			</div>
+		</div>
+
+		<br />
+		<br />
+
+		<div id="our-tools">
+			<h1>our tools</h1>
+			<!-- <div class="two-sided tool" id=""> -->
+			<!--  <div class="left"> -->
+			<!--   <h2>find or create your next opportunity in the blink of an eye</h2>  -->
+			<!--   <p>Find student projects, professors, and other oppoortunities looking for help on campus here! <br><br> Or publicize your own project here! </p> -->
+			<!--   <button class="hack-button" type="button">lets do this!</button> -->
+			<!--  </div>  -->
+			<!--  <div class="right"> -->
+			<!--  </div> -->
+			<!-- </div> -->
+
+			<div class="two-sided tool">
+				<div class="left">
+					<h2>things shouldn't sit around to collect dust</h2>
+					<p>Borrow parts, tools, and equipment free of charge from hacklab. See our fully searchable
+						inventory!</p>
+					<a href="https://uconnhacklab.notion.site/113c57c0020c80edba23d035471c14eb?v=113c57c0020c818abc95000cf916c199"
+						class="hack-button">onwards!</a>
+				</div>
+				<div class="right">
+					<img src="/images/wrench.svg" />
+				</div>
+			</div>
+		</div>
+
+		<!--
+		<div id="volunteer-suggestions">
+			<h1>have a suggestion or want to volunteer?</h1>
+
+			<p><a href="/volunteer">Learn more</a> about all the cool projects we have planned. </p>
+
+		</div>
+		-->
+
+
+	</div>
 </div>
 {{ end }}

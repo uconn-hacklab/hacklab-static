@@ -67,7 +67,7 @@ $body-size: 1.3rem;
   }
   
   ol, ul {
-    font-size: $body-size;
+    font-size: inherit; //$body-size;
     line-height: 1.58;
     margin-left: 20px;
   }
@@ -144,7 +144,18 @@ $body-size: 1.3rem;
       width: 900px;
     }
   }
+  table, td, th {
+    border: 1px solid;
+    padding: 10px;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-radius: 2px;
+  }
+  #table-container {
+    overflow-x: auto;
+  }
 
  }
-
 
