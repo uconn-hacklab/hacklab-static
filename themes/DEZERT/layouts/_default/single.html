@@ -1,21 +1,21 @@
 {{ define "main" }}
 {{ $post := .Page }}
 <div class="single-container">
-  <div class="post-page">
-    <div id="post-head">
-      <h1>{{ $post.Title }}</h1>
-      {{ with $post.Params.summary }}
-        <h3>{{ . }}</h3>
-      {{ end }}
-      <div class="date">
+	<div class="post-page">
+		<div id="post-head">
+			<h1>{{ lower $post.Title }}</h1>
+			{{ with $post.Params.summary }}
+			<h3>{{ . }}</h3>
+			{{ end }}
+			<div class="date">
 
-        <i>Last modified {{ $post.Params.last_modified | time.Format ":date_long" }}</i>
-      </div>
-    </div>
-    <div class="content">
-      {{ $post.Content}}
-    </div>
-  </div>
+				<i>Last modified {{ $post.Params.last_modified | time.Format ":date_long" }}</i>
+			</div>
+		</div>
+		<div class="content">
+			{{ $post.Content}}
+		</div>
+	</div>
 </div>
 {{- partial "footer.html" . -}}
 {{ end }}
