@@ -1,6 +1,6 @@
 ---
 title: "leadership and contact"
-last_modified: "2024-07-06T00:00:00-00:00"
+last_modified: "2025-08-30T00:00:00-00:00"
 ---
 For general inquiries or old equipment donations, please contact our current leadership. If you are interested in getting involved, please see our [volunteer page](/volunteer). 
 

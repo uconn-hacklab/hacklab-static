@@ -1,6 +1,7 @@
 ---
 title: "looking to get involved?"
 last_modified: "2024-07-06T00:00:00-00:00"
+draft: true
 ---
 So you want to help us build cool stuff with us... 
 
@@ -11,15 +12,7 @@ Additionally club elections are held anually, so you also have the opportunity t
 # active projects
 Do not fret if you don't have the right experience. As long as you have a willingness to learn that is the most important thing. 
 
-Currently we are seeking help for people to help with the following projects:
 
-## TODO: audio synth
-## TODO: mini-mill
-
-
-A place for students to learn about our organization and the projects we are working on.
-  - Frontend: Hugo, Markdown, HTML, CSS
-  - We need content writers too!
 
 
 # future projects

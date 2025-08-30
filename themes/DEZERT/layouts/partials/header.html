@@ -1,29 +1,40 @@
+<header>
+	<nav class="navbar" id="navbar" role="navigation">
+		<div id="left">
+			<a id="logo" href="/">
+				{{ partial "icon" (dict "icon" "hacklab-logo") }}
+			</a>
+			<a id="hamburger" href="javascript:void(0);" onclick="triggerHamburger()">
+				{{ partial "icon" (dict "icon" "hamburger") }}
+			</a>
+		</div>
+		<div id="right">
+			<div class="dropdown">
+				<button class="dropbtn">
+					club info
+				</button>
+				<div class="dropdown-content">
+					<a href="/new-members">new members</a>
+					<a href="/hours-and-location">hours & location</a>
+					<a href="/leadership-and-contact">leadership & contact</a>
+					<!--<a href="/volunteer">volunteer</a>-->
+					<a href="/discord">our discord</a>
+				</div>
+			</div>
 
-<header>  
-  <nav class="navbar" id="navbar" role="navigation">  
-    <div id="left"> 
-      <a id="logo" href="/">
-        {{ partial "icon" (dict "icon" "hacklab-logo") }}
-      </a>
-      <a id="hamburger" href="javascript:void(0);" onclick="triggerHamburger()">
-        {{ partial "icon" (dict "icon" "hamburger") }}
-      </a>
-    </div>  
-    <div id="right">  
-      <div class="dropdown">
-        <button class="dropbtn">
-          club stuff
-        </button>
-        <div class="dropdown-content">
-          <a href="/new-members">new members</a>
-          <a href="/hours-and-location">hours & location</a>
-          <a href="/leadership-and-contact">leadership & contact</a>
-          <a href="/volunteer">volunteer</a>
-          <a href="/discord">our discord</a>
-        </div>
-      </div>
+			<div class="dropdown">
+				<button class="dropbtn">
+					workshops
+				</button>
+				{{ $workshops := where .Site.Pages "Type" "workshop"}}
+				<div class="dropdown-content">
+					{{ range $workshops }}
+					<a href="{{ .Permalink }}">{{ .Title }}</a>
+					{{ end }}
+				</div>
+			</div>
 
-      <!-- <div class="dropdown">
+			<!-- <div class="dropdown">
         <button class="dropbtn">
           made @ hacklab
         </button>
@@ -34,7 +45,7 @@
         </div>
       </div> -->
 
-      <!-- <div class="dropdown">
+			<!-- <div class="dropdown">
         <button class="dropbtn">
          initiatives 
         </button>
@@ -47,18 +58,18 @@
         </div>
       </div> -->
 
-      <!-- <div class="dropdown"> -->
-      <!--   <button class="dropbtn"> -->
-      <!--     events -->
-      <!--   </button> -->
-      <!--   <div class="dropdown-content"> -->
-      <!--     <a href="#">hack the lab</a> -->
-      <!--     <a href="#">crossroads</a> -->
-      <!--     <a href="#">makerfaire</a> -->
-      <!--   </div> -->
-      <!-- </div> -->
-      
-    </div>  
-    
-  </nav>  
-</header>  
+			<!-- <div class="dropdown"> -->
+			<!--   <button class="dropbtn"> -->
+			<!--     events -->
+			<!--   </button> -->
+			<!--   <div class="dropdown-content"> -->
+			<!--     <a href="#">hack the lab</a> -->
+			<!--     <a href="#">crossroads</a> -->
+			<!--     <a href="#">makerfaire</a> -->
+			<!--   </div> -->
+			<!-- </div> -->
+
+		</div>
+
+	</nav>
+</header>
