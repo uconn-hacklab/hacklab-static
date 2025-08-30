@@ -4,7 +4,28 @@ last_modified: "2024-07-06T00:00:00-00:00"
 ---
 For general inquiries or old equipment donations, please contact our current leadership. If you are interested in getting involved, please see our [volunteer page](/volunteer). 
 
-# current eboard
+# 2025-2026 eboard
+{{<officer image="images/johnmichael-profile.png" name="john michael" position="president">}}
+Passionate about building creative solutions to help people and keep childlike wonder alive. Rising materials science and engineering junior.
+{{</officer>}}
+
+{{<officer image="images/kalin.png" name="kalin kochnev" position="vice-president/treasurer">}}
+[kalinkochnev.com](https://kalinkochnev.com)
+[kalin.kochnev@gmail.com](mailto:kalin.kochnev@gmail.com)
+
+**Interests:** books, blogging, embedded, systems programming, controls.
+{{</officer>}}
+
+{{<officer image="images/gordon_pfp.jpg" name="gordon chen" position="secretary">}}
+"The first virtue is curiosity" -Eliezer Yudkowsky
+
+**Interests:** Deep Learning, Math, Computer Science, Physics.
+{{</officer>}}
+
+
+{{<linebreak>}}{{<linebreak>}}
+
+# 2024-2025 eboard
 {{<officer image="images/kalin.png" name="kalin kochnev" position="president/co-founder">}}
 [kalinkochnev.com](https://kalinkochnev.com)
 [kalin.kochnev@gmail.com](mailto:kalin.kochnev@gmail.com)
