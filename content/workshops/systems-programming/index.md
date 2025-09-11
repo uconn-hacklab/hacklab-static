@@ -16,7 +16,7 @@ Note: If you attended this talk last semester, we are following a completely dif
 # materials
 1. BRING YOUR LAPTOP!!!
 2. You can use the online Rust playground to use for coding https://play.rust-lang.org/ during our workshop. Or install locally to your computer.
-3. The blockchain learning guide and sample code from Kalin [click here for the zip](materials_sys_prog_workshop.zip)
+3. The blockchain learning guide and sample code from Kalin [click here for the zip](sys_prog_materials.zip)
 4. The introduction to systems programming workshop I recorded last semester.
 
 {{< youtube dXl-L2wM1eA >}}
